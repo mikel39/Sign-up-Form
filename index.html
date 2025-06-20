@@ -12,10 +12,10 @@
         <img src="./assets/images/nik-bole3BdeOto-unsplash.jpg" alt="" />
         <div>
           <img src="./assets/images/odin-lined.png" alt="logo" />
-          <h1>ODIN</h1>
+          <span>ODIN</span>
         </div>
       </div>
-      <div>
+      <div class="left-container">
         <p>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque
           dolorum fuga minus vitae quis, quisquam quidem vero. Blanditiis
@@ -23,7 +23,7 @@
         </p>
         <em>You Know you want to.</em>
         <form action="">
-          <h2>Let's do this!</h2>
+          <legend>Let's do this!</legend>
           <fieldset>
             <div>
               <label for="first-name">first name</label>
@@ -35,7 +35,13 @@
             </div>
             <div>
               <label for="password">password</label>
-              <input type="password" name="password" id="password" required />
+              <input
+                type="password"
+                name="password"
+                id="password"
+                required
+                pattern="(\d{8,})"
+              />
             </div>
             <div>
               <label for="confirm-password">confirm password</label>
@@ -44,6 +50,7 @@
                 name="confirm-password"
                 id="confirm-password"
                 required
+                pattern="(\d{8,})"
               />
             </div>
           </fieldset>
